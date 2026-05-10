@@ -1,0 +1,11 @@
+name: Hello DevSecOps
+on: [push]
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Print a message
+        run: echo "My first CI pipeline ran successfully"
+      - name: Show files
+        run: ls -la
